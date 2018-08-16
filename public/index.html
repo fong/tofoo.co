@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>tofoo.co</title>
+        <meta name="theme-color" content="#000000">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+              rel="stylesheet">
+
+        <!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Favicon
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+
+    </head>
+    <body>
+        <div id="menu" onclick="openMenu()" onblur="closeMenu()" style="background-color: rgba(255,0,0,0.8); padding: 0.5em 0.75em 0.5em 0.5em; margin: 0; left: 0; top: 1em; cursor: pointer">
+            <p id="menu-menu" class="noselect"><i class="material-icons md-48">menu</i></p>
+            <p class="menu-child"><a onclick="menuScroll('graphics')">graphic</a></p>
+            <p class="menu-child"><a onclick="menuScroll('electronics')">electronics</a></p>
+            <p class="menu-child"><a onclick="menuScroll('3d')">3d printing</a></p>
+            <p class="menu-child"><a onclick="menuScroll('coding')">coding</a></p>
+            <p class="menu-child"><a onclick="menuScroll('projects')">projects</a></p>
+        </div>
+        <div id="goTop" onclick="closeMenu()"><a onclick="scrollToID('top')"><i class="material-icons md-48">arrow_upward</i></a></div>
+        <!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="top" class="container">
+            <div class="row">
+                <div class="column" style="margin-top: 20vh; min-height: 5vh;">
+                    <!--<div style="padding-top: 1em;"><img src="images/t.png"></div>-->
+                    <h5 id="title"></h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="column" style=" min-height: 70vh">
+                </div>
+            </div>
+        </div>
+
+        <div id="graphics" class="container">
+            <div class="row">
+                <div class="column" style="margin-top: 0%">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="column" style=" min-height: 5.5em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 style="cursor: default">GRAPHIC</h1>
+                    <h3><a onclick="scrollToID('tees')">TEES</a>&emsp;<a onclick="scrollToID('wallpapers')">WALLPAPERS</a></h3>
+
+                    <div class="container" id="tees">
+                        <div class="row">
+                            <div class="column" style=" min-height: 1em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Featured on <a href="https://www.blipshift.com/" target="_blank" rel="noopener"><i>Blipshift</i></a></h2>
+                    <div style="width: 100%; padding-top: 2em;">
+                        <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.0" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" class="img-panel square">
+                            <a href="https://www.blipshift.com/products/dragon-baller" target="_blank" rel="noopener"><img src="images/blip/saiyanara.png"></a>
+                        </div>
+                        <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.0" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" class="img-panel square">
+                            <a href="https://www.blipshift.com/products/disc-collection" target="_blank" rel="noopener"><img src="images/blip/ultimatedisc.png"></a>
+                        </div>
+                        <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.0" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" class="img-panel square">
+                            <a href="https://www.blipshift.com/products/such-a-sucker" target="_blank" rel="noopener"><img src="images/blip/fanboy.png"></a>
+                        </div>
+                        <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.0" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" class="img-panel square">
+                            <a href="https://www.blipshift.com/products/maths" target="_blank" rel="noopener"><img src="images/blip/integration2.png"></a>
+                        </div>
+                        <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.0" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" class="img-panel square">
+                            <a href="https://www.blipshift.com/products/pet-snail" target="_blank" rel="noopener"><img src="images/blip/turbogary.png"></a>
+                        </div>
+                        <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.0" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" class="img-panel square">
+                            <a href="https://www.blipshift.com/products/pigs-fly" target="_blank" rel="noopener"><img src="images/blip/pinkpig.png"></a>
+                        </div>
+                        <div data-tilt data-tilt-reverse="true" data-tilt-scale="1.0" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" class="img-panel square">
+                            <a href="https://www.blipshift.com/products/trollin" target="_blank" rel="noopener"><img src="images/blip/saab.png"></a>
+                        </div>
+                    </div>
+
+                    <div class="container" id="wallpapers">
+                        <div class="row">
+                            <div class="column" style=" min-height: 2em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Wallpapers</h2>
+                    <div style="width: 100%; padding-top: 2em;">
+                        <div class="img-panel rect">
+                            <a href="images/wallpapers/5000s.jpg" target="_blank" rel="noopener"><img src="images/wallpapers/5000s.jpg"></a>
+                        </div>
+                        <div class="img-panel rect">
+                            <a href="images/wallpapers/aw11.jpg" target="_blank" rel="noopener"><img src="images/wallpapers/aw11.jpg"></a>
+                        </div>
+                        <div class="img-panel rect">
+                            <a href="images/wallpapers/xr10.jpg" target="_blank" rel="noopener"><img src="images/wallpapers/xr10.jpg"></a>
+                        </div>
+                        <div class="img-panel rect">
+                            <a href="images/wallpapers/p400.jpg" target="_blank" rel="noopener"><img src="images/wallpapers/p400.jpg"></a>
+                        </div>
+                        <div class="img-panel rect">
+                            <a href="images/wallpapers/p34.jpg" target="_blank" rel="noopener"><img src="images/wallpapers/p34.jpg"></a>
+                        </div>
+                        <div class="img-panel rect">
+                            <a href="images/wallpapers/s30.png" target="_blank" rel="noopener"><img src="images/wallpapers/s30.png"></a>
+                        </div>
+                    </div>
+
+                    <div style="width: 100%; text-align: right">
+                        <a target="_blank" href="http://blinkerfluidart.tumblr.com/" style="text-decoration: underline; font-size: 1em;">more &#8594;</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="coding" class="container">
+            <div class="row">
+                <div class="column" style="margin-top: 0%">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="column" style=" min-height: 5.5em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 style="cursor: default">CODING</h1>
+                    <h3>
+                        <a onclick="scrollToID('irwf')">I really want food</a>&emsp;
+                        <a onclick="scrollToID('dotL')">(dot)L</a>&emsp;
+                        <a onclick="scrollToID('appl')">Appl.py</a>
+                    </h3>
+
+                    <div class="container" id="irwf">
+                        <div class="row">
+                            <div class="column" style=" min-height: 1em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">I really want food</h2>
+                    <h5>2018</h5>
+                    
+                    <div style="width: 100%; padding-top: 3em; position: relative;">
+                        <div class="img-panel full-width" style="z-index: 5;">
+                            <a href="images/code/iwantfood.gif" target="_blank" rel="noopener"><img src="images/code/iwantfood.gif"></a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p style="font-size: 0.9em">
+                            <b>I really want food</b> is a web app, that helps you pick a place to eat. It randomises a location within a set area, so that you don't need to over yonder to get fed.
+                        </p>
+                        <p>
+                            React, Docker, Azure, Mapbox/Zomato API
+                        </p>
+                        <a target="_blank" rel="noopener" href="https://ireallywantfood.azurewebsites.net">Website</a>&nbsp;&nbsp;
+                        <a target="_blank" rel="noopener" href="https://github.com/fong/iwantfood">Github</a>
+                    </div>
+                    
+                    <div class="container" id="dotL">
+                        <div class="row">
+                            <div class="column" style=" min-height: 1em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Defense of the Lords - (dot)L</h2>
+                    <h5>2017</h5>
+                    <div style="width: 100%; padding-top: 3em; position: relative;">
+                        <div class="img-panel full-width" style="z-index: 5;">
+                            <a href="images/code/1.gif" target="_blank" rel="noopener"><img src="images/code/1.gif"></a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p style="font-size: 0.9em">
+                            <b>(dot)L</b> is a game based on the classic arcade game <i>Warlords</i>. One to four players compete against one another to defend their bases from a destructive ball by using paddles.
+                        </p>
+                        <p>
+                            Java, JavaFX
+                        </p>
+                        <a target="_blank" rel="noopener" href="files/dotL.jar">Executable</a>&nbsp;&nbsp;
+                        <a target="_blank" rel="noopener" href="https://bitbucket.org/efon103/uoa-cs302-2017-group-24">Bitbucket</a>
+                    </div>
+
+                    <div class="container" id="appl">
+                        <div class="row">
+                            <div class="column" style=" min-height: 2em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Appl.py</h2>
+                    <h5>2017</h5>
+                    <div style="width: 100%; padding-top: 3em;">
+                        <div class="img-panel full-width">
+                            <a href="images/code/appl_1.gif" target="_blank" rel="noopener"><img src="images/code/appl_1.gif"></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 0.9em">
+                            <b>Appl.py</b> is a hybrid peer-to-peer social network running on Python and CherryPy. The server/client communicates to a centralised server for a list of verified users with their IP addresses/port configurations and login authenication. Messaging and file transfer is strictly peer-to-peer between active clients.
+                        </p>
+                        <p>
+                            Python (CherryPy, PyCrypto, Jinja2), SQLite
+                        </p>
+                        <a target="_blank" rel="noopener" href="https://bitbucket.org/efon103/uoa-cs302-2017-efon103">Bitbucket</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column" style=" min-height: 80vh">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+        <!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    </body>
+    <footer>
+
+
+    </footer>
+</html>

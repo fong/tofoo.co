@@ -1,0 +1,148 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+a {
+    cursor: pointer;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15vmin;
+}
+
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4vmin;
+}
+
+h5 a {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h3 a{
+    color: white;
+    text-decoration: none;
+}
+
+.section-title {
+    margin-top: 1em;
+}
+
+img {
+
+}
+
+.img-panel {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.square {
+    width: 32%;
+    margin-top: -6.25vmin;
+    margin-left: -1vmin;
+    z-index: 0;
+    transform: scale(0.8, 0.8);
+}
+
+.rect {
+    width: 49%;
+    min-width: 6em;
+    margin-top: -5vmin;
+    margin-left: -1vmin;
+    z-index: 0;
+    transform: scale(0.8, 0.8);
+}
+
+.full-width {
+    width: 84%;
+    min-width: 6em;
+    margin-top: -5vmin;
+    margin-left: -1vmin; 
+}
+
+.img-panel img {
+    max-height: 120%;
+    max-width: 120%;
+}
+
+#goTop {
+    color: white;
+    position: fixed;
+    visibility: hidden;
+    z-index: 150;
+    right: 1em;
+    bottom: 1em;
+    text-shadow: 4px 4px black;
+}
+
+#goTop a {
+    color: white;
+}
+
+#menu {
+    color: white;
+    position: fixed;
+    visibility: visible;
+    z-index: 150;
+    left: 0.5em;
+    top: 0.5em;
+    height: 52px;
+    width: 48px;
+    
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu p:first-child {
+    margin: 0;
+    display: block;
+    text-shadow: 4px 4px black;
+}
+
+#menu p:nth-child(n+2) {
+    margin: 0 0 0 5px;
+    display: none;
+}
+
+.slider-arrow {
+    text-align: right;
+    z-index: 10;
+    font-size: 1.5em;
+}
+
+.slider-arrow a {
+    color: white;
+}
+
+.slider-arrow a:hover {
+    color: #1EAEDB;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
