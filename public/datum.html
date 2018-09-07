@@ -21,40 +21,44 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
-        <link rel="stylesheet" href="css/datum.css">
+        <link rel="stylesheet" href="css/datum.css?<?=filemtime('styles.css');?>">
         <script src="live.js" type="text/javascript"></script>
     </head>
     <body style="text-align: center;">
-        <div style="position: fixed; top: 0; left: 0; z-index: -10; width: 100%; opacity: 1">
-            <img src="images/auckland.jpg" style="height: 150vh; margin-left: auto; margin-right: auto; margin-top: -25vh">
+        <div style="position: fixed; top: 0; left: 0%; z-index: -10; width: 100%; opacity: 1">
+            <img src="images/auckland.jpg" style="height: 150vh; margin-top: -25vh">
         </div>
 
-        <div style="margin-top: 10vh; padding: 5vw; background-color: #222222d8; width: 80vh; margin-left: auto; margin-right: auto; border: 2px solid rgb(206, 31, 31)">
+        <div class="container container-spacing" style="padding: 5vw; background-color: #222222cc; border: 2px solid rgb(206, 31, 31)">
+            <div class="row">
+
             <img src="images/datum_logo.png" style="height: 10vh">
             <h1>
                 Datum
             </h1>
-
+            <br/>
             <h4>
-                Some random intro
+                Some random introduction
             </h4>
 
             <p>
                 Datum is a game to be played while moving. So get moving.
             </p>
-
-            <div style="width: 40%; margin-left: auto; margin-right: auto; display:inline-block">
-                <div style="padding: 12px 0; width: 50%; float: left">
-                    <a href='http://play.google.com/store/?pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Download on the App Store' src='/images/applestore.png' style="height: 48px; width: auto;"/></a>
+            <br/>
+            <div class="six columns">
+                <div style="padding: 12px 0">
+                    <a href='http://play.google.com/store/?pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' rel="noopener"><img alt='Download on the App Store' src='/images/applestore.png' style="height: 48px; width: auto;"/></a>
                 </div>
-                <div style="width: 50%; margin-left: 50%">
-                    <a href='http://play.google.com/store/?pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style="height: 72px; width: auto;"/></a>
+            </div class="six columns">
+                <div>
+                    <a href='http://play.google.com/store/?pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' rel="noopener"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' style="height: 72px; width: auto;"/></a>
                 </div>
             </div>
-
+            <br/>
             <p style="font-size: 0.75em">
                 This is some disclaimer we should put in
             </p>
+            </div>
         </div>
     </body>
 </html>
