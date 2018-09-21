@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/style.css">
-        <!-- <script src="live.js" type="text/javascript"></script> -->
+        <script src="live.js" type="text/javascript"></script>
 
         <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,6 +51,12 @@
             ::-webkit-scrollbar-thumb:hover {
                 background: #FF0000; 
             }
+        </style>
+
+        <style>
+            html {
+            scroll-behavior: smooth
+        }
         </style>
     </head>
     <body>
@@ -177,10 +183,41 @@
 
                     <h1 style="cursor: default">CODING</h1>
                     <h3>
+                        <a onclick="scrollToID('datum')">Datum</a>&emsp;
                         <a onclick="scrollToID('irwf')">I really want food</a>&emsp;
                         <a onclick="scrollToID('dotL')">(dot)L</a>&emsp;
                         <a onclick="scrollToID('appl')">Appl.py</a>
                     </h3>
+
+                    <div class="container" id="datum">
+                        <div class="row">
+                            <div class="column" style=" min-height: 1em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title">Datum</h2>
+                    <h5>2018</h5>
+
+                    <div style="position: relative; margin: 0 auto; left: 0; right: 0; text-align: center">
+                        <div class="img-panel" style="z-index: 5; display: inline-block; padding: 1em">
+                            <div>
+                                <a href="images/code/datum1.gif" target="_blank" rel="noopener"><img src="images/code/datum1.gif" style="width: 33%"></a>
+                                <a href="images/code/datum2.gif" target="_blank" rel="noopener"><img src="images/code/datum2.gif" style="width: 33%"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p style="font-size: 0.9em">
+                            <b>Datum</b> is a pervasive game developed for iOS and Android, designed to implicitly integrate transport data to encourage the use of sustainable transport. 
+                            The project explores the viability of using indirect methods to increase the adoption and enjoyment of using sustainable transportation.
+                        </p>
+                        <p>
+                            Ionic <span style="font-size: 0.65em">(Angular, Cordova)</span>, Firebase <span style="font-size: 0.65em">(Authentication, Firestore)</span>, 
+                            Google Maps, Auckland Transport GTFS, Onzo API
+                        </p>
+                    </div>
 
                     <div class="container" id="irwf">
                         <div class="row">
@@ -255,7 +292,7 @@
                             <b>Appl.py</b> is a hybrid peer-to-peer social network running on Python and CherryPy. The server/client communicates to a centralised server for a list of verified users with their IP addresses/port configurations and login authenication. Messaging and file transfer is strictly peer-to-peer between active clients.
                         </p>
                         <p>
-                            Python (CherryPy, PyCrypto, Jinja2), SQLite
+                            Python <span style="font-size: 0.65em">(CherryPy, PyCrypto, Jinja2)</span>, SQLite
                         </p>
                         <a target="_blank" rel="noopener" href="https://bitbucket.org/efon103/uoa-cs302-2017-efon103">Bitbucket</a>
                     </div>
